@@ -12,50 +12,101 @@ title: Tools for remote working
 {% assign iphone="<i class='fab fa-app-store-ios'></i>" %}
 {% assign lock="<i class='fas fa-lock'></i>" %}
 
-{% assign inserm="<span title='INSERM' style='color: #e74011;'><b>Ⓘ</b></span>" %}
-{% assign cnrs="<span title='CNRS' style='color: #62c4dd;'><b>Ⓒ</b></span>" %}
-{% assign sorbonne="<span title='Sorbonne Université' style='color: #ffb500;'><b>Ⓢ</b></span>" %}
-<style>
-#legend {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  border: 3px solid #73AD21;
-}
-</style>
-<details id="legend">
-<summary>Legend</summary>
-<dl>
-<dt>S</dt>
-<dd>Sorbonne University</dd>
-<dt>C</dt>
-<dd>CNRS</dd>
-<dt>Ⓘ</dt>
-<dd>INSERM</dd>
-</dl>
-</details>
+{% assign inserm="<span title='INSERM' style='color: #e74011;'><b>🅘</b></span>" %}
+​⃰{% assign inserm-eu="<span title='INSERM (.eu account)' style='color: #e74011;'><b>🅘¹</b></span>" %}
+{% assign cnrs="<span title='CNRS' style='color: #62c4dd;'><b>🅒</b></span>" %}
+{% assign sorbonne="<span title='Sorbonne Université' style='color: #ffb500;'><b>🅢</b></span>" %}
+{% capture renater %}
+{{inserm}}&thinsp;{{cnrs}}&thinsp;{{sorbonne}}
+{% endcapture %}
 
-## Video-conferencing (*Zoom*-like)
-
-## File storage/sharing (*Dropbox*-like)
+<div class="container">
+<h1>Tools for remote working</h1>
+<div class="row">
+<div class="col md-4">{{ inserm}} INSERM</div>
+<div class="col md-4">{{ cnrs}} CNRS</div>
+<div class="col md-4">{{ sorbonne}} Sorbonne Université</div>
+</div>
+<div class="row">
+<div class="col md-12">
+<h3 class="mt-2">Overview</h3>
+</div>
+</div>
+<div class="row justify-content-left">
+<div class="col-3">
+<ul>
+<li><a href="#video">Video conferencing</a></li>
+<li><a href="#storage">File storage/sharing</a></li>
+<li><a href="#chat">Chat + file sharing</a></li>
+</ul>
+</div>
+<div class="col-3"></div>
+<ul>
+<li><a href="#publication">Publication access</a></li>
+<li><a href="#software">Software licenses</a></li>
+</ul>
+</div>
+<section id="video">
+<h2 class="mt-5"><i class="fas fa-video"></i>&nbsp; Video-conferencing (<q><i>Zoom</i>-like</q>)</h2>
+{% capture web-mobile-compat %}{{web}}&thinsp;{{android}}&thinsp;{{iphone}}{% endcapture %}
+{% capture all-but-web %}{{windows}}&thinsp;{{osx}}&thinsp;{{linux}}&thinsp;{{android}}&thinsp;{{iphone}}{% endcapture %}
+{% capture all-but-linux %}{{windows}}&thinsp;{{osx}}&thinsp;{{web}}&thinsp;{{android}}&thinsp;{{iphone}}{% endcapture %}
 {% capture all-compat %}{{windows}}&thinsp;{{osx}}&thinsp;{{linux}}&thinsp;{{web}}&thinsp;{{android}}&thinsp;{{iphone}}{% endcapture %}
+{% capture all-desktop %}{{windows}}&thinsp;{{osx}}&thinsp;{{linux}}{% endcapture %}
 
-{% include software_box.html service-name="iBox" service-provider=inserm
-   software-compatibility=all-compat software-name="Nextcloud" software-link="https://nextcloud.com/files/" free-name="Quota" free-value="25&nbsp;GB"
-   links="<a href='https://ibox.inserm.fr'>Web interface</a>&nbsp;<i class='fas fa-lock'></i> &ndash; <a href='https://nextcloud.com/support/'>Nextcloud documentation</a> &ndash; <a href='https://intranet.inserm.fr/services-et-support-informatique/Documents/ibox-utilisateurs-v3.pdf'>INSERM documentation&nbsp;<i class='fas fa-lock'></i></a>" %}
+{% include software_box.html service-name="Teams" service-provider=inserm-eu
+   software-compatibility=all-compat software-name="Microsoft Teams" software-link="https://teams.microsoft.com/"
+   links="<a href='https://teams.microsoft.com/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://intranet.inserm.fr/actualites/Pages/detail.aspx?news_id=284'  class='btn btn-primary'>INSERM documentation</a>" free-text="<span style='color: #e74011;'>¹</span>&nbsp; Needs an <code>@inserm.eu</code> account. Account details were sent via mail in March 2020. If you do not have one, request an account here: <a href='https://siou.inserm.fr/'>siou.inserm.fr</a>." %}
+
+{% include software_box.html service-name="Rendez-Vous" service-provider=renater
+   software-compatibility=web-mobile-compat software-name="Jitsi Meet" software-link="https://jitsi.org/jitsi-meet/"
+   links="<a href='https://rendez-vous.renater.fr/home/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://jitsi.github.io/handbook/docs/intro'  class='btn btn-primary'>Jitsi documentation</a>|<a href='https://services.renater.fr/voix_et_image/rdv/user_guide'  class='btn btn-primary'>RENATER documentation</a>" %}
+
+{% include software_box.html service-name="Tixeo" service-provider=cnrs
+   software-compatibility=all-but-web software-name="Tixeo" software-link="https://www.tixeo.com/"
+   links="<a href='https://tixeo.cnrs.fr' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://aide.core-cloud.net/si/tixeo/SitePages/Accueil.aspx' class='btn btn-primary'>CNRS documentation</a>" %}
+
+</section>
+<section id="storage">
+<h2 class="mt-5"><i class="far fa-hdd"></i>&nbsp; File storage/sharing (<q><i>Dropbox</i>-like</q>)</h2>
+{% include software_box.html service-name="DropSU" service-provider=sorbonne
+   software-compatibility=all-compat software-name="Nextcloud" software-link="https://nextcloud.com/files/" free-text="Offers 100&nbsp;GB of space; Documents/folders can be shared with external users without account; OnlyOffice installation for collaborative editing of MS Office documents"
+   links="<a href='https://dropsu.sorbonne-universite.fr/' class='btn btn-primary'>Web interface&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://nextcloud.com/support/' class='btn btn-primary'>Nextcloud documentation</a>|<a href='https://intranet.sorbonne-universite.fr/fr/procedures-et-services/informatique/outils-documentaires-collaboratifs.html' class='btn btn-primary'>Sorbonne documentation&nbsp;<i class='fas fa-lock'></i></a>" %}
 
 {% include software_box.html service-name="MyCore" service-provider=cnrs
-   software-compatibility=all-compat software-name="ownCloud" software-link="https://owncloud.com/" free-name="Quota" free-value="100&nbsp;GB"
-   links="<a href='https://mycore.core-cloud.net/index.php/login'>Web interface&nbsp;<i class='fas fa-lock'></i></a> &ndash; <a href='https://owncloud.com/docs-guides/'>ownCloud documentation</a> &ndash; <a href='https://confluence.cnrs.fr/confluence/pages/viewpage.action?spaceKey=ODSCORE&title=Aide+utilisateur'>CNRS documentation&nbsp;<i class='fas fa-lock'></i></a>" %}
+   software-compatibility=all-compat software-name="ownCloud" software-link="https://owncloud.com/" free-text="Offers 100&nbsp;GB of space;  Documents/folders can be shared with external users without account"
+   links="<a href='https://mycore.core-cloud.net/index.php/login' class='btn btn-primary'>Web interface&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://owncloud.com/docs-guides/' class='btn btn-primary'>ownCloud documentation</a>|<a href='https://confluence.cnrs.fr/confluence/pages/viewpage.action?spaceKey=ODSCORE&title=Aide+utilisateur' class='btn btn-primary'>CNRS documentation&nbsp;<i class='fas fa-lock'></i></a>" %}
 
-{% include software_box.html service-name="DropSU" service-provider=sorbonne
-   software-compatibility=all-compat software-name="Nextcloud" software-link="https://nextcloud.com/files/" free-name="Quota" free-value="100&nbsp;GB"
-   links="<a href='https://dropsu.sorbonne-universite.fr/'>Web interface</a>&nbsp;<i class='fas fa-lock'></i> &ndash; <a href='https://nextcloud.com/support/'>Nextcloud documentation</a> &ndash; <a href='https://intranet.sorbonne-universite.fr/fr/procedures-et-services/informatique/outils-documentaires-collaboratifs.html'>Sorbonne documentation&nbsp;<i class='fas fa-lock'></i></a>" %}
-   
-## Chat + file sharing (*Slack*-like)
+{% include software_box.html service-name="iBox" service-provider=inserm
+   software-compatibility=all-compat software-name="Nextcloud" software-link="https://nextcloud.com/files/" free-text="Offers 25&nbsp;GB of space;  Documents/folders can be shared with external users without account"
+   links="<a href='https://ibox.inserm.fr' class='btn btn-primary'>Web interface&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://nextcloud.com/support/' class='btn btn-primary'>Nextcloud documentation</a>|<a href='https://intranet.inserm.fr/services-et-support-informatique/Documents/ibox-utilisateurs-v3.pdf' class='btn btn-primary'>INSERM documentation&nbsp;<i class='fas fa-lock'></i></a>" %}
+</section>
+<section id="chat">
+<h2 class="mt-5"><i class="far fa-comment-dots"></i>&nbsp; Chat + file sharing (<q><i>Slack</i>-like</q>)</h2>
+{% include software_box.html service-name="Citadel" service-provider=cnrs
+   software-compatibility=all-but-linux software-name="Citadel Team" software-link="https://citadel.team/" free-text="Quite basic functionality"
+   links="<a href='https://cnrs.citadel.team/' class='btn btn-primary'>Web interface&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://support.citadel.team/kb' class='btn btn-primary'>Citadel support</a>|<a href='https://aide.core-cloud.net/si/citadel/SitePages/Accueil.aspx' class='btn btn-primary'>CNRS documentation&nbsp;<i class='fas fa-lock'></i></a>" %}
+</section>
+<section id="publication">
+<h2 class="mt-5"><i class="far fa-newspaper"></i>&nbsp; Publication access</h2>
+<p>The access described below can be made automatic with Browser plugins such as <i>ezProxy</i> (<a href="https://addons.mozilla.org/en-US/firefox/addon/ezproxy-redirect-foxified/"><i class="fas fa-download"></i>&nbsp;Firefox Add-On</a>, <a href="https://chrome.google.com/webstore/detail/ezproxy-redirect/gfhnhcbpnnnlefhobdnmhenofhfnnfhi"><i class="fas fa-download"></i>&nbsp;Chrome Extension</a>).</p>
+{% include biblio_box.html service-name="Inserm biblio" service-provider=inserm portal-url="insermbiblio.inist.fr/" direct-url="proxy.insermbiblio.inist.fr/login?url=" %}
 
-## Publication access
+{% include biblio_box.html service-name="insb bib cnrs" service-provider=cnrs portal-url="bib.cnrs.fr" direct-url="insb.bib.cnrs.fr/login?url=" %}
 
-## Software access
+{% include biblio_box.html service-name="Sorbonne Portail Documentaire" service-provider=sorbonne portal-url="documentation.sorbonne-universites.fr/ressources/ressources-electroniques.html" direct-url="proxy.insermbiblio.inist.fr/login?url=" %}
+</section>
+<section id="software">
+<h2 class="mt-5"><i class="fas fa-laptop-code"></i>&nbsp; Software licences</h2>
+<p>Campus licences for all members of Sorbonne University</p>
+
+{% include software_box.html service-name="Antivirus (Kapersky)" service-provider=sorbonne software-name="Kapersky Anti-Virus" software-link="https://www.kaspersky.fr/antivirus" software-compatibility=all-desktop links="<a href='http://logiciels.upmc.fr/fr/marches_conclus_par_l_upmc/antivirus.html' class='btn btn-primary'>Sorbonne Campus Licence&nbsp;<i class='fas fa-lock'></i></a>"%}
 
 
+{% include software_box.html service-name="Matlab" service-provider=sorbonne software-name="Matlab" software-link="https://fr.mathworks.com/" software-compatibility=all-desktop links="<a href='http://logiciels.upmc.fr/fr/marches_conclus_par_l_upmc/matlab/lic_standalone_personnel.html' class='btn btn-primary'>Employee licence&nbsp;<i class='fas fa-lock'></i></a>|<a href='http://logiciels.upmc.fr/fr/marches_conclus_par_l_upmc/matlab/lic_standalone_etudiant.html' class='btn btn-primary'>Student licence&nbsp;<i class='fas fa-lock'></i></a>"%}
+
+{% include software_box.html service-name="Mathematica" service-provider=sorbonne software-name="Mathematica" software-link="https://www.wolfram.com/mathematica/" software-compatibility=all-desktop links="<a href='http://logiciels.upmc.fr/fr/marches_conclus_par_l_upmc/mathematica.html' class='btn btn-primary'>Sorbonne Campus Licence&nbsp;<i class='fas fa-lock'></i></a>"%}
+
+{% include software_box.html service-name="Maple" service-provider=sorbonne software-name="Maple" software-link="https://www.maplesoft.com/" software-compatibility=all-desktop links="<a href='http://logiciels.upmc.fr/fr/marches_conclus_par_l_upmc/maple.html' class='btn btn-primary'>Sorbonne Campus Licence&nbsp;<i class='fas fa-lock'></i></a>"%}
+</section>
+</div>

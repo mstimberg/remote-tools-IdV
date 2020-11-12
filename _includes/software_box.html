@@ -1,11 +1,19 @@
-<div class="software-box">
-<div class="service-name">
+<div class="software-box card">
+<div class="card-body">
+<h5 class="card-title">
 {{ include.service-name }}&nbsp;{{ include.service-provider }}
-</div><div class="Software">
+</h5>
+<h6 class="card-subtitle mb-2 text-muted">
 Sofware: <span class="software-name"><a href="{{ include.software-link}}">{{ include.software-name }}</a></span> ({{ include.software-compatibility }})
+</h6>
+<div class="card-text mb-2">
+{% if include.free-text %}
+{{ include.free-text}}
+{% endif %}
 </div>
-<div class="software-info">
-{{ include.free-name}} : {{ include.free-value }}
-<i class="fas fa-link"></i>: {{include.links}}
+{% assign links = include.links | split: "|" %}
+{% for link in links %}
+{{ link }}
+{% endfor %}
 </div>
 </div>
