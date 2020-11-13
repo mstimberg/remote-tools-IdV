@@ -80,7 +80,7 @@ title: Outils pour travail à distance
 
 {% include software_box.html service-name="iBox" service-provider=inserm
    software-compatibility=all-compat software-name="Nextcloud" software-link="https://nextcloud.com/files/" free-text="Offre 25&nbsp;Go d'espace; Documents/fichiers peuvent être partagés avec des utilisateurs externes sans compte"
-   links="<a href='https://ibox.inserm.fr' class='btn btn-primary'>Web interface&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://nextcloud.com/support/' class='btn btn-primary'>Documentation Nextcloud</a>|<a href='https://intranet.inserm.fr/services-et-support-informatique/Documents/ibox-utilisateurs-v3.pdf' class='btn btn-primary'>Documentation INSERM&nbsp;<i class='fas fa-lock'></i></a>" %}
+   links="<a href='https://ibox.inserm.fr' class='btn btn-primary'>Interface web&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://nextcloud.com/support/' class='btn btn-primary'>Documentation Nextcloud</a>|<a href='https://intranet.inserm.fr/services-et-support-informatique/Documents/ibox-utilisateurs-v3.pdf' class='btn btn-primary'>Documentation INSERM&nbsp;<i class='fas fa-lock'></i></a>" %}
 </section>
 <section id="chat">
 <h2 class="mt-5"><i class="far fa-comment-dots"></i>&nbsp; Chat + partage de fichier (<q>comme <i>Slack</i></q>)</h2>
