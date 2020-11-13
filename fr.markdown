@@ -57,11 +57,15 @@ title: Outils pour travail à distance
 
 {% include software_box.html service-name="Teams" service-provider=inserm-eu
    software-compatibility=all-compat software-name="Microsoft Teams" software-link="https://teams.microsoft.com/"
-   links="<a href='https://teams.microsoft.com/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://intranet.inserm.fr/actualites/Pages/detail.aspx?news_id=284'  class='btn btn-primary'>INSERM documentation</a>" free-text="<span style='color: #e74011;'>¹</span>&nbsp; Nécessite un compte <code>@inserm.eu</code>. Les identifants ont été envoyé par mail en mars 2020. En cas de besoin, contactez <a href='https://siou.inserm.fr/'>siou.inserm.fr</a>." %}
+   links="<a href='https://teams.microsoft.com/' class='btn btn-primary'>Interface web&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://intranet.inserm.fr/actualites/Pages/detail.aspx?news_id=284'  class='btn btn-primary'>INSERM documentation</a>" free-text="<span style='color: #e74011;'>¹</span>&nbsp; Nécessite un compte <code>@inserm.eu</code>. Les identifants ont été envoyé par mail en mars 2020. En cas de besoin, contactez <a href='https://siou.inserm.fr/'>siou.inserm.fr</a>." %}
 
 {% include software_box.html service-name="Rendez-Vous" service-provider=renater
    software-compatibility=web-mobile-compat software-name="Jitsi Meet" software-link="https://jitsi.org/jitsi-meet/"
-   links="<a href='https://rendez-vous.renater.fr/home/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://jitsi.github.io/handbook/docs/intro'  class='btn btn-primary'>Jitsi documentation</a>|<a href='https://services.renater.fr/voix_et_image/rdv/user_guide' class='btn btn-primary'>RENATER documentation</a>" free-text="Nombre maximale de participants en simultané: 5 to 10 (seulement audio), 4 to 5 (vidéo)" %}
+   links="<a href='https://rendez-vous.renater.fr/home/' class='btn btn-primary'>Interface web&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://jitsi.github.io/handbook/docs/intro'  class='btn btn-primary'>Jitsi documentation</a>|<a href='https://services.renater.fr/voix_et_image/rdv/user_guide' class='btn btn-primary'>RENATER documentation</a>" free-text="Nombre maximale de participants en simultané: 5 to 10 (seulement audio), 4 to 5 (vidéo)" %}
+
+{% include software_box.html service-name="Zoom" service-provider=sorbonne
+   software-compatibility=all-compat software-name="Zoom" software-link="https://zoom.us/"
+   links="<a href='https://zoom.us/' class='btn btn-primary'>Interface web</a>|<a href='https://hotline.sorbonne-universite.fr/front/document.send.php?docid=2179' class='btn btn-primary'>Procédure pour accès&nbsp;<i class='fas fa-lock'></i></a>" free-text="Pour utilisation pendant une période définie (par exemple pour organiser une conférence/atelier) avec beaucoup de participants." %}
 
 {% include software_box.html service-name="Tixeo" service-provider=cnrs
    software-compatibility=all-but-web software-name="Tixeo" software-link="https://www.tixeo.com/"

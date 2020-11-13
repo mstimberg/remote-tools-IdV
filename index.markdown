@@ -61,7 +61,11 @@ title: Tools for remote working
 
 {% include software_box.html service-name="Rendez-Vous" service-provider=renater
    software-compatibility=web-mobile-compat software-name="Jitsi Meet" software-link="https://jitsi.org/jitsi-meet/"
-   links="<a href='https://rendez-vous.renater.fr/home/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://jitsi.github.io/handbook/docs/intro'  class='btn btn-primary'>Jitsi documentation</a>|<a href='https://services.renater.fr/voix_et_image/rdv/user_guide' class='btn btn-primary'>RENATER documentation</a>" free-text="Limits for simultaneous participants: 5 to 10 (audio-only), 4 to 5 (video)" %}
+   links="<a href='https://rendez-vous.renater.fr/home/' class='btn btn-primary'>Web interface&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://jitsi.github.io/handbook/docs/intro'  class='btn btn-primary'>Jitsi documentation</a>|<a href='https://services.renater.fr/voix_et_image/rdv/user_guide' class='btn btn-primary'>RENATER documentation</a>" free-text="Limits for simultaneous participants: 5 to 10 (audio-only), 4 to 5 (video)" %}
+
+{% include software_box.html service-name="Zoom" service-provider=sorbonne
+   software-compatibility=all-compat software-name="Zoom" software-link="https://zoom.us/"
+   links="<a href='https://zoom.us/' class='btn btn-primary'>Web interface</a>|<a href='https://hotline.sorbonne-universite.fr/front/document.send.php?docid=2179' class='btn btn-primary'>Procedure to get account&nbsp;<i class='fas fa-lock'></i></a>" free-text="For time-limited use (e.g. for a conference/workshop) with many participants" %}
 
 {% include software_box.html service-name="Tixeo" service-provider=cnrs
    software-compatibility=all-but-web software-name="Tixeo" software-link="https://www.tixeo.com/"
