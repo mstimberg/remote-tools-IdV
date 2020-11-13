@@ -1,8 +1,7 @@
 ---
 lang: fr
-slug: index/fr
 layout: default
-title: Tools for remote working
+title: Outils pour travail à distance
 ---
 
 <script src="https://kit.fontawesome.com/2b48dbc3a6.js" crossorigin="anonymous"></script>
@@ -38,7 +37,7 @@ title: Tools for remote working
 <div class="col-3">
 <ul>
 <li><a href="#video">Visio-conférence</a></li>
-<li><a href="#storage">Stockage/partage de fichiers/dossiers</a></li>
+<li><a href="#storage">Stockage/partage de fichiers</a></li>
 <li><a href="#chat">Chat + partage de fichier</a></li>
 </ul>
 </div>
@@ -58,11 +57,11 @@ title: Tools for remote working
 
 {% include software_box.html service-name="Teams" service-provider=inserm-eu
    software-compatibility=all-compat software-name="Microsoft Teams" software-link="https://teams.microsoft.com/"
-   links="<a href='https://teams.microsoft.com/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://intranet.inserm.fr/actualites/Pages/detail.aspx?news_id=284'  class='btn btn-primary'>INSERM documentation</a>" free-text="<span style='color: #e74011;'>¹</span>&nbsp; Needs an <code>@inserm.eu</code> account. Account details were sent via mail in March 2020. If you do not have one, request an account here: <a href='https://siou.inserm.fr/'>siou.inserm.fr</a>." %}
+   links="<a href='https://teams.microsoft.com/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://intranet.inserm.fr/actualites/Pages/detail.aspx?news_id=284'  class='btn btn-primary'>INSERM documentation</a>" free-text="<span style='color: #e74011;'>¹</span>&nbsp; Nécessite un compte <code>@inserm.eu</code>. Les identifants ont été envoyé par mail en mars 2020. En cas de besoin, contactez <a href='https://siou.inserm.fr/'>siou.inserm.fr</a>." %}
 
 {% include software_box.html service-name="Rendez-Vous" service-provider=renater
    software-compatibility=web-mobile-compat software-name="Jitsi Meet" software-link="https://jitsi.org/jitsi-meet/"
-   links="<a href='https://rendez-vous.renater.fr/home/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://jitsi.github.io/handbook/docs/intro'  class='btn btn-primary'>Jitsi documentation</a>|<a href='https://services.renater.fr/voix_et_image/rdv/user_guide' class='btn btn-primary'>RENATER documentation</a>" free-text="Limits for simultaneous participants: 5 to 10 (audio-only), 4 to 5 (video)" %}
+   links="<a href='https://rendez-vous.renater.fr/home/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://jitsi.github.io/handbook/docs/intro'  class='btn btn-primary'>Jitsi documentation</a>|<a href='https://services.renater.fr/voix_et_image/rdv/user_guide' class='btn btn-primary'>RENATER documentation</a>" free-text="Nombre maximale de participants en simultané: 5 to 10 (seulement audio), 4 to 5 (vidéo)" %}
 
 {% include software_box.html service-name="Tixeo" service-provider=cnrs
    software-compatibility=all-but-web software-name="Tixeo" software-link="https://www.tixeo.com/"
@@ -70,7 +69,7 @@ title: Tools for remote working
 
 </section>
 <section id="storage">
-<h2 class="mt-5"><i class="far fa-hdd"></i>&nbsp; Stockage/partage de fichiers/dossiers (<q>comme <i>Dropbox</i></q>)</h2>
+<h2 class="mt-5"><i class="far fa-hdd"></i>&nbsp; Stockage/partage de fichiers (<q>comme <i>Dropbox</i></q>)</h2>
 {% include software_box.html service-name="DropSU" service-provider=sorbonne
    software-compatibility=all-compat software-name="Nextcloud" software-link="https://nextcloud.com/files/" free-text="Offre 100&nbsp;Go d'espace; Documents/fichiers peuvent être partagés avec des utilisateurs externes sans compte; Installation OnlyOffice pour édition collaboratif des documents MS Office"
    links="<a href='https://dropsu.sorbonne-universite.fr/' class='btn btn-primary'> Interface web&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://nextcloud.support/com/' class='btn btn-primary'>Documentation Nextcloud</a>|<a href='https://intranet.sorbonne-universite.fr/fr/procedures-et-services/informatique/outils-documentaires-collaboratifs.html' class='btn btn-primary'>Documentation Sorbonne&nbsp;<i class='fas fa-lock'></i></a>" %}
