@@ -5,12 +5,12 @@ title: Outils pour travail à distance
 ---
 
 <script src="https://kit.fontawesome.com/2b48dbc3a6.js" crossorigin="anonymous"></script>
-{% assign windows="<i class='fab fa-windows'></i>" %}
-{% assign osx="<i class='fab fa-apple'></i>" %}
-{% assign linux="<i class='fab fa-linux'></i>" %}
-{% assign web="<i class='fas fa-globe'></i>" %}
-{% assign android="<i class='fab fa-google-play'></i>" %}
-{% assign iphone="<i class='fab fa-app-store-ios'></i>" %}
+{% assign windows="<i class='fab fa-windows' title='Windows'></i>" %}
+{% assign osx="<i class='fab fa-apple' title='OS X'></i>" %}
+{% assign linux="<i class='fab fa-linux' title='Linux'></i>" %}
+{% assign web="<i class='fas fa-globe' title='Web'></i>" %}
+{% assign android="<i class='fab fa-google-play' title='Android'></i>" %}
+{% assign iphone="<i class='fab fa-app-store-ios' title='iPhone'></i>" %}
 {% assign lock="<i class='fas fa-lock'></i>" %}
 
 {% assign inserm="<span title='INSERM' style='color: #e74011;'><b>🅘</b></span>" %}
