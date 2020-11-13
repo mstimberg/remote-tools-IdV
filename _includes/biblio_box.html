@@ -4,9 +4,25 @@
 {{ include.service-name }}&nbsp;{{ include.service-provider }}
 </h5>
 <div class="card-text">
-<i>Direct access:</i> <code>{{ include.direct-url }}</code><i>URL</i><br>
-<i>Example:</i> <a href="https://{{ include.direct-url }}https://www.nature.com/articles/s41591-019-0346-1">{{ include.direct-url }}https://www.nature.com/articles/s41591-019-0346-1</a>
+<i>
+{% if page.lang == 'en' %}
+Direct access:
+{% else %}
+Accès direct:
+{% endif %}</i> <code>{{ include.direct-url }}</code><i>URL</i><br>
+<i>
+{% if page.lang == 'en' %}
+Example:
+{% else %}
+Exemple:
+{% endif %}</i> <a href="https://{{ include.direct-url }}https://www.nature.com/articles/s41591-019-0346-1">{{ include.direct-url }}https://www.nature.com/articles/s41591-019-0346-1</a>
 </div>
-<a class="portal-url" href="https://{{ include.portal-url }}" class="card-link btn btn-primary">Publication directory&nbsp;<i class='fas fa-lock'></i></a>
+<a class="portal-url" href="https://{{ include.portal-url }}" class="card-link btn btn-primary">
+{% if page.lang == 'en' %}
+Publication directory
+{% else %}
+Portail documentaire
+{% endif %}
+&nbsp;<i class='fas fa-lock'></i></a>
 </div>
 </div>

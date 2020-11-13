@@ -4,7 +4,12 @@
 {{ include.service-name }}&nbsp;{{ include.service-provider }}
 </h5>
 <h6 class="card-subtitle mb-2 text-muted">
-Sofware: <span class="software-name"><a href="{{ include.software-link}}">{{ include.software-name }}</a></span> ({{ include.software-compatibility }})
+{% if page.lang == "en" %}
+Sofware:
+{% else %}
+Logiciel:
+{% endif %}
+<span class="software-name"><a href="{{ include.software-link}}">{{ include.software-name }}</a></span> ({{ include.software-compatibility }})
 </h6>
 <div class="card-text mb-2">
 {% if include.free-text %}
