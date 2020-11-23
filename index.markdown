@@ -57,7 +57,7 @@ title: Tools for remote working
 
 {% include software_box.html service-name="Teams" service-provider=inserm-eu
    software-compatibility=all-compat software-name="Microsoft Teams" software-link="https://teams.microsoft.com/"
-   links="<a href='https://teams.microsoft.com/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://intranet.inserm.fr/actualites/Pages/detail.aspx?news_id=284'  class='btn btn-primary'>INSERM documentation</a>" free-text="<span style='color: #e74011;'>¹</span>&nbsp; Needs an <code>@inserm.eu</code> account. Account details were sent via mail in March 2020. If you do not have one, request an account here: <a href='https://siou.inserm.fr/'>siou.inserm.fr</a>." %}
+   links="<a href='https://teams.microsoft.com/' class='btn btn-primary'>Web interface &nbsp;<i class='fas fa-lock'></i></a>|<a href='https://intranet.inserm.fr/wp-content/uploads/2020/08/MS-Teams-creer-visioconference.pdf'  class='btn btn-primary'>Creating a videoconference with Teams (INSERM)&nbsp;<i class='fas fa-lock'></i></a>" free-text="<span style='color: #e74011;'>¹</span>&nbsp; Needs an <code>@inserm.eu</code> account. Account details were sent via mail in March 2020. If you do not have one, request an account here: <a href='https://siou.inserm.fr/'>siou.inserm.fr</a>." %}
 
 {% include software_box.html service-name="Rendez-Vous" service-provider=renater
    software-compatibility=web-mobile-compat software-name="Jitsi Meet" software-link="https://jitsi.org/jitsi-meet/"
@@ -84,7 +84,7 @@ title: Tools for remote working
 
 {% include software_box.html service-name="iBox" service-provider=inserm
    software-compatibility=all-compat software-name="Nextcloud" software-link="https://nextcloud.com/files/" free-text="Offers 25&nbsp;GB of space;  Documents/folders can be shared with external users without account"
-   links="<a href='https://ibox.inserm.fr' class='btn btn-primary'>Web interface&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://nextcloud.com/support/' class='btn btn-primary'>Nextcloud documentation</a>|<a href='https://intranet.inserm.fr/services-et-support-informatique/Documents/ibox-utilisateurs-v3.pdf' class='btn btn-primary'>INSERM documentation&nbsp;<i class='fas fa-lock'></i></a>" %}
+   links="<a href='https://ibox.inserm.fr' class='btn btn-primary'>Web interface&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://nextcloud.com/support/' class='btn btn-primary'>Nextcloud documentation</a>" %}
 </section>
 <section id="chat">
 <h2 class="mt-5"><i class="far fa-comment-dots"></i>&nbsp; Chat + file sharing (<q><i>Slack</i>-like</q>)</h2>
