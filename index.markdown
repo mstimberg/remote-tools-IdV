@@ -99,7 +99,7 @@ title: Tools for remote working
 
 {% include biblio_box.html service-name="insb bib cnrs" service-provider=cnrs portal-url="bib.cnrs.fr" direct-url="insb.bib.cnrs.fr/login?url=" %}
 
-{% include biblio_box.html service-name="Sorbonne Portail Documentaire" service-provider=sorbonne portal-url="documentation.sorbonne-universites.fr/ressources/ressources-electroniques.html" direct-url="http://accessdistant.sorbonne-universite.fr/?url=" %}
+{% include biblio_box.html service-name="Sorbonne Portail Documentaire" service-provider=sorbonne portal-url="documentation.sorbonne-universites.fr/ressources/ressources-electroniques.html" direct-url="accessdistant.sorbonne-universite.fr/?url=" %}
 </section>
 <section id="software">
 <h2 class="mt-5"><i class="fas fa-laptop-code"></i>&nbsp; Software licences</h2>
