@@ -61,7 +61,11 @@ title: Outils pour travail à distance
 
 {% include software_box.html service-name="Rendez-Vous" service-provider=renater
    software-compatibility=web-mobile-compat software-name="Jitsi Meet" software-link="https://jitsi.org/jitsi-meet/"
-   links="<a href='https://rendez-vous.renater.fr/home/' class='btn btn-primary'>Interface web&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://jitsi.github.io/handbook/docs/intro'  class='btn btn-primary'>Jitsi documentation</a>|<a href='https://services.renater.fr/voix_et_image/rdv/user_guide' class='btn btn-primary'>RENATER documentation</a>" free-text="Nombre maximale de participants en simultané: 5 to 10 (seulement audio), 4 to 5 (vidéo)" %}
+   links="<a href='https://rendez-vous.renater.fr/home/' class='btn btn-primary'>Interface web&nbsp;<i class='fas fa-lock'></i></a>|<a href='https://jitsi.github.io/handbook/docs/intro'  class='btn btn-primary'>Jitsi documentation</a>|<a href='https://services.renater.fr/voix_et_image/rdv/user_guide' class='btn btn-primary'>Documentation RENATER</a>" free-text="Nombre maximale de participants en simultané: 5 to 10 (seulement audio), 4 to 5 (vidéo)" %}
+
+{% include software_box.html service-name="Zoom" service-provider=cnrs
+   software-compatibility=all-compat software-name="Zoom" software-link="https://cnrs.zoom.us/"
+   links="<a href='https://cnrs.zoom.us/' class='btn btn-primary'>Interface web</a>|<a href='https://intranet.cnrs.fr/Cnrs_pratique/si/Pages/Zoom.aspx' class='btn btn-primary'>Documentation CNRS&nbsp;<i class='fas fa-lock'></i></a>" free-text="Pour les échanges ne portant pas sur des informations sensibles, notamment à caractère personnel."%}
 
 {% include software_box.html service-name="Zoom" service-provider=sorbonne
    software-compatibility=all-compat software-name="Zoom" software-link="https://zoom.us/"
