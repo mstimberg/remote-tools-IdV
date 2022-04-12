@@ -3,6 +3,7 @@
 <h5 class="card-title service-name">
 {{ include.service-name }}&nbsp;{{ include.service-provider }}
 </h5>
+{% if include.direct-url %}
 <div class="card-text">
 <i>
 {% if page.lang == 'en' %}
@@ -17,6 +18,7 @@ Example:
 Exemple:
 {% endif %}</i> <a href="https://{{ include.direct-url }}https://www.nature.com/articles/s41591-019-0346-1">https://{{ include.direct-url }}https://www.nature.com/articles/s41591-019-0346-1</a>
 </div>
+{% endif %}
 <a class="portal-url" href="https://{{ include.portal-url }}" class="card-link btn btn-primary">
 {% if page.lang == 'en' %}
 Publication directory
